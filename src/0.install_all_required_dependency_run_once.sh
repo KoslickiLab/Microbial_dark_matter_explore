@@ -22,10 +22,12 @@ unset conda_path
 # create env
 # Still use py3.7 as may encounter pkg conflicts in 3.8+
 conda create -y -p ${PWD}/conda_env/MAPS_py37 python=3.7
+conda activate ${PWD}/conda_env/MAPS_py37
 conda install -y -c anaconda seaborn
 conda install -y -c bioconda kmc
 conda install -y -c bioconda sourmash
 conda install -y -c bioconda sra-tools
+
 conda deactivate
 
 
